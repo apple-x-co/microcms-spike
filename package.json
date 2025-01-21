@@ -1,0 +1,15 @@
+{
+  "engines": {
+    "node": "22.5.1"
+  },
+  "scripts": {
+    "build": "rollup --config"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "microcms-js-sdk": "^3.1.2",
+    "rollup": "^4.31.0"
+  }
+}

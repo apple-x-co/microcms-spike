@@ -6,5 +6,44 @@
     <script src="./js/index.min.js"></script>
 </head>
 <body>
+<h2>News List</h2>
+<div id="news-list-holder" style="display: flex; gap: 0.5rem;"></div>
+<template id="news-list-item-template">
+    <div style="border: 1px solid red; border-radius: 5px; padding: 10px;">
+        <a class="js-link">
+            <img src="" alt="" class="js-thumbnail" style="max-width: 100px">
+            <p class="js-title"></p>
+            <p class="js-published_at"></p>
+        </a>
+    </div>
+</template>
+
+<h2>News Detail</h2>
+<div id="news-detail-holder" style="display: flex; gap: 0.5rem;"></div>
+<template id="news-detail-template">
+    <div style="border: 1px solid red; border-radius: 5px; padding: 10px;">
+        <img src="" alt="" class="js-thumbnail" style="max-width: 100px">
+        <p class="js-category"></p>
+        <p class="js-title"></p>
+        <p class="js-published_at"></p>
+        <p class="js-related-link"></p>
+    </div>
+</template>
+
+<h2>News Search</h2>
+<form method="get">
+    <input type="text" name="title" placeholder="title">
+    <button>search</button>
+</form>
+<div id="news-search-result-holder" style="display: flex; gap: 0.5rem;"></div>
+<template id="news-search-result-item-template">
+    <div style="border: 1px solid red; border-radius: 5px; padding: 10px;">
+        <a class="js-link">
+            <img src="" alt="" class="js-thumbnail" style="max-width: 100px">
+            <p class="js-title"></p>
+            <p class="js-published_at"></p>
+        </a>
+    </div>
+</template>
 </body>
 </html>
